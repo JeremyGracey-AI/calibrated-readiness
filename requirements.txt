@@ -1,0 +1,12 @@
+# Calibrated Readiness - runnable core (NO cloud, NO keys).
+# This is everything needed to reproduce the headline artifact:
+#   pip install -r requirements.txt
+#   python scripts/run_calibration.py     # -> data/reliability.png + metrics.json
+#   pytest -q                              # the falsifiable-claim test suite
+#
+# Versions are the ones the benchmark was developed and verified against.
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib==3.10.8
+pytest>=8.0

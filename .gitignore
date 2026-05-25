@@ -1,0 +1,24 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Generated data (regenerate with scripts/). We DO commit data/reliability.png
+# and data/metrics.json so judges see results immediately - see exceptions below.
+data/learners.csv
+data_iso/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Keep the committed headline artifacts
+!data/reliability.png
+!data/metrics.json

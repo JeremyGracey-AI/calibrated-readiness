@@ -1,0 +1,34 @@
+{
+  "sim": {
+    "n_learners": 600,
+    "discrimination": 1.7,
+    "difficulty": 0.0,
+    "practice_noise": 0.55,
+    "gain": 1.9,
+    "seed": 7
+  },
+  "calibration": {
+    "test_fraction": 0.5,
+    "n_bins": 10,
+    "bootstrap_rounds": 300,
+    "ci_level": 0.95,
+    "readiness_threshold": 0.8,
+    "seed": 7
+  },
+  "result": {
+    "method": "temperature",
+    "gain": 1.9,
+    "n_bins": 10,
+    "n_train": 300,
+    "n_test": 300,
+    "raw_ece": 0.1632848737485071,
+    "cal_ece": 0.07336523384692883,
+    "ece_reduction_pct": 55.06917930443044,
+    "raw_mce": 0.23307659474715806,
+    "cal_mce": 0.1460775768063557,
+    "raw_brier": 0.20835144940717606,
+    "cal_brier": 0.18592083161764242,
+    "temperature": 2.365098498809457,
+    "base_rate": 0.48333333333333334
+  }
+}

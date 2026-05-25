@@ -1,0 +1,20 @@
+# Microsoft Agent Framework layer - needed ONLY for the live agent / Foundry demo
+# (app/demo.py --mode live). The runnable, verifiable core does not need any of this.
+#
+# IMPORTANT - moving target: these are independently-versioned pre-release
+# packages whose mutual compatibility shifts week to week. The set below is what
+# this project was built against. There is a KNOWN incompatibility to resolve
+# before a live run (see docs/LIVE_FOUNDRY_NOTES.md):
+#   agent-framework-azure-ai 1.0.0rc6 imports `BaseContextProvider` from
+#   agent_framework, but agent-framework-core 1.6.0 exposes it as
+#   `ContextProvider`. Pin a mutually-compatible pair (e.g. hold azure-ai back to
+#   a build that targets core 1.6.0, or move core forward to match rc6) before
+#   `app/demo.py --mode live`.
+#
+# Exact "==" pins let pip install these pre-release versions without --pre.
+
+agent-framework-core==1.6.0
+agent-framework-orchestrations==1.0.0rc2
+agent-framework-azure-ai-search==1.0.0b260521
+agent-framework-azure-ai==1.0.0rc6
+azure-identity>=1.19
