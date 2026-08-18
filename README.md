@@ -8,7 +8,7 @@ sdk_version: 6.24.0
 app_file: app.py
 pinned: false
 license: mit
-short_description: Interactive calibration demo — cut Expected Calibration Error and verify it in 60s
+short_description: Cut calibration error (ECE) and verify it in 60 seconds
 ---
 
 # Calibrated Readiness
