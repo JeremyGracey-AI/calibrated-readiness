@@ -1,3 +1,16 @@
+---
+title: Calibrated Readiness
+emoji: 🎯
+colorFrom: indigo
+colorTo: green
+sdk: gradio
+sdk_version: 6.24.0
+app_file: app.py
+pinned: false
+license: mit
+short_description: Interactive calibration demo — cut Expected Calibration Error and verify it in 60s
+---
+
 # Calibrated Readiness
 
 **A multi-agent enterprise certification system that reports exam-readiness as a

@@ -10,3 +10,4 @@ scipy==1.15.3
 scikit-learn==1.7.2
 matplotlib==3.10.8
 pytest>=8.0
+gradio==6.24.0
